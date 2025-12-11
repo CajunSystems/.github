@@ -21,10 +21,11 @@ A lightweight actor system that brings predictable, safe concurrency to Java app
 
 ```java
 // Simple actor example
-ActorRef<String> greeter = system.spawn(msg ->
-    System.out.println("Hello, " + msg)
-);
-greeter.tell("World!");
+Pid actorPid = system.actorOf(GreetingHandler.class)
+    .withId("greeter-1")  // Optional: specify ID (otherwise auto-generated)
+    .spawn();
+
+actorPid.tell(new HelloMessage());
 ```
 
 [→ Explore Cajun](https://github.com/CajunSystems/cajun)

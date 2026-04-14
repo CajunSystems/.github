@@ -57,6 +57,45 @@ Effect<IOException, String> readConfig =
 
 ---
 
+### [Gumbo](https://github.com/CajunSystems/gumbo) - Shared Log & Executor Framework
+
+The foundational layer powering the newer CajunSystems projects. Gumbo provides a shared structured log and virtual-thread executor for the JDK 21+.
+
+**What makes Gumbo special:**
+- 📋 **Structured shared log** - Consistent, queryable log infrastructure across services
+- ⚡ **Virtual-thread executor** - High-throughput execution built for Java 21+
+- 🧱 **Foundation for the ecosystem** - The building block that Bayou and Boudin build upon
+
+[→ Explore Gumbo](https://github.com/CajunSystems/gumbo)
+
+---
+
+### [Bayou](https://github.com/CajunSystems/bayou) - Actor System on Gumbo
+
+An actor system built on top of Gumbo, inheriting its structured log and executor for a lightweight, performant concurrency model.
+
+**What makes Bayou special:**
+- 🎭 **Actor-based concurrency** - Message-passing model on Gumbo's virtual-thread executor
+- 📋 **Gumbo-powered logging** - Actors emit structured logs through the shared Gumbo log
+- 🔗 **Ecosystem integration** - Works seamlessly alongside Boudin workflows
+
+[→ Explore Bayou](https://github.com/CajunSystems/bayou)
+
+---
+
+### [Boudin](https://github.com/CajunSystems/boudin) - Workflow System on Gumbo
+
+A workflow system built on top of Gumbo, enabling composable, durable pipelines driven by Gumbo's execution model.
+
+**What makes Boudin special:**
+- 🔄 **Composable workflows** - Chain steps into durable, inspectable pipelines
+- ⚙️ **Gumbo-powered execution** - Workflows run on Gumbo's virtual-thread executor
+- 📋 **Structured observability** - Workflow state flows through the shared Gumbo log
+
+[→ Explore Boudin](https://github.com/CajunSystems/boudin)
+
+---
+
 ## 🤝 Join the Community
 
 We believe great software is built by passionate communities. Whether you're fixing a typo, implementing a feature, or sharing an idea, **your contributions are welcome!**
@@ -71,14 +110,14 @@ We believe great software is built by passionate communities. Whether you're fix
 
 ### Getting Started
 
-1. **Check out the repositories** - Browse [Cajun](https://github.com/CajunSystems/cajun) and [Roux](https://github.com/CajunSystems/roux)
+1. **Check out the repositories** - Browse [Cajun](https://github.com/CajunSystems/cajun), [Roux](https://github.com/CajunSystems/roux), [Gumbo](https://github.com/CajunSystems/gumbo), [Bayou](https://github.com/CajunSystems/bayou), and [Boudin](https://github.com/CajunSystems/boudin)
 2. **Look for "good first issue" labels** - Perfect for getting familiar with the codebase
 3. **Read the contribution guidelines** - Each project has guidelines in its repository
 4. **Join the conversation** - Participate in issues and discussions
 
 ### Requirements
 
-Both projects require **Java 21+** to take advantage of modern JVM features like virtual threads and structured concurrency.
+All projects require **Java 21+** to take advantage of modern JVM features like virtual threads and structured concurrency.
 
 ---
 
@@ -96,7 +135,7 @@ Modern Java has incredible capabilities, but concurrent and functional programmi
 
 ## 📦 Installation
 
-Both projects are available on Maven Central:
+All projects are available on Maven Central:
 
 **Cajun:**
 ```xml
@@ -113,6 +152,33 @@ Both projects are available on Maven Central:
     <groupId>systems.cajun</groupId>
     <artifactId>roux</artifactId>
     <version>0.1.0</version>
+</dependency>
+```
+
+**Gumbo:**
+```xml
+<dependency>
+    <groupId>systems.cajun</groupId>
+    <artifactId>gumbo</artifactId>
+    <version><!-- check latest version --></version>
+</dependency>
+```
+
+**Bayou:**
+```xml
+<dependency>
+    <groupId>systems.cajun</groupId>
+    <artifactId>bayou</artifactId>
+    <version><!-- check latest version --></version>
+</dependency>
+```
+
+**Boudin:**
+```xml
+<dependency>
+    <groupId>systems.cajun</groupId>
+    <artifactId>boudin</artifactId>
+    <version><!-- check latest version --></version>
 </dependency>
 ```
 

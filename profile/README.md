@@ -135,14 +135,14 @@ Modern Java has incredible capabilities, but concurrent and functional programmi
 
 ## 📦 Installation
 
-All projects are available on Maven Central:
+**Cajun** and **Roux** are available on Maven Central:
 
 **Cajun:**
 ```xml
 <dependency>
     <groupId>systems.cajun</groupId>
     <artifactId>cajun</artifactId>
-    <version><!-- check latest version --></version>
+    <version>0.7.0</version>
 </dependency>
 ```
 
@@ -151,34 +151,47 @@ All projects are available on Maven Central:
 <dependency>
     <groupId>systems.cajun</groupId>
     <artifactId>roux</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.2</version>
 </dependency>
 ```
+
+**Gumbo**, **Bayou**, and **Boudin** are available via [JitPack](https://jitpack.io). Add the JitPack repository first:
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+Then add the dependencies:
 
 **Gumbo:**
 ```xml
 <dependency>
-    <groupId>systems.cajun</groupId>
+    <groupId>com.github.CajunSystems</groupId>
     <artifactId>gumbo</artifactId>
-    <version><!-- check latest version --></version>
+    <version><!-- check latest version on JitPack --></version>
 </dependency>
 ```
 
 **Bayou:**
 ```xml
 <dependency>
-    <groupId>systems.cajun</groupId>
+    <groupId>com.github.CajunSystems</groupId>
     <artifactId>bayou</artifactId>
-    <version><!-- check latest version --></version>
+    <version><!-- check latest version on JitPack --></version>
 </dependency>
 ```
 
 **Boudin:**
 ```xml
 <dependency>
-    <groupId>systems.cajun</groupId>
+    <groupId>com.github.CajunSystems</groupId>
     <artifactId>boudin</artifactId>
-    <version><!-- check latest version --></version>
+    <version><!-- check latest version on JitPack --></version>
 </dependency>
 ```
 
